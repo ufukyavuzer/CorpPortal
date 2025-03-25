@@ -1,0 +1,154 @@
+{
+  "//": "CorpPortal - Configuration Data",
+  "//": "Description: This JSON file contains all configuration data for the CorpPortal, including header information, main links, and modal content.",
+  "//": "Author: Ufuk Yavuzer",
+  "//": "Created: March 24, 2025",
+  "//": "Version: 1.0",
+  "header": {
+    "title": "Company Portal",
+    "logo": "logo.png",
+    "href": "https://www.example.com/"
+  },
+  "mainLinks": [
+    {
+      "href": "https://support.example.com/tickets",
+      "icon": "fa-life-ring",
+      "text": "IT Support System"
+    },
+    {
+      "href": "https://portal.example.com/",
+      "icon": "fa-handshake-o",
+      "text": "Company E-Portal"
+    },
+    {
+      "href": "https://workflow.example.com/",
+      "icon": "fa-line-chart",
+      "text": "Workflow System"
+    },
+    {
+      "href": "https://dashboard.example.com",
+      "icon": "fa-television",
+      "text": "Dashboard"
+    },
+    {
+      "href": "https://attendance.example.com",
+      "icon": "fa-vcard",
+      "text": "Attendance System"
+    },
+    {
+      "href": "https://resources.example.com/menu.pdf",
+      "icon": "fa-cutlery",
+      "text": "Cafeteria Menu",
+      "timestamp": true
+    },
+    {
+      "modal": "myModalEkran",
+      "icon": "fa-server",
+      "text": "Production Dashboards"
+    },
+    {
+      "href": "https://mail.example.com/",
+      "icon": "fa-envelope",
+      "text": "Email Login"
+    },
+    {
+      "href": "https://directory.example.com",
+      "icon": "fa-phone-square",
+      "text": "Company Directory"
+    },
+    {
+      "modal": "myModalKVKK",
+      "image": "images/training.png",
+      "text": "Compliance Training"
+    },
+    {
+      "modal": "myModalSSS",
+      "icon": "fa-address-book-o",
+      "text": "IT Handbook"
+    },
+    {
+      "modal": "myModalBk",
+      "icon": "fa-file-video-o",
+      "text": "Maintenance Guide"
+    },
+    {
+      "href": "https://remote.example.com:8080/vpn/",
+      "icon": "fa-connectdevelop",
+      "text": "Remote Access"
+    },
+    {
+      "href": "https://internal.example.com/org-chart.pdf",
+      "icon": "fa-sitemap",
+      "text": "Organization Chart",
+      "timestamp": true
+    },
+    {
+      "modal": "myModal1",
+      "icon": "fa-line-chart",
+      "text": "Web Shortcuts"
+    }
+  ],
+  "modals": {
+    "myModalSSS": {
+      "title": "IT Handbook",
+      "items": [
+        {"href": "training/workflow-1.mp4", "text": "Workflow Training 1 (01.11.2023)"},
+        {"href": "training/workflow-2.mp4", "text": "Workflow Training 2 (01.11.2023)"},
+        {"href": "guides/update-inventory.mp4", "text": "How to Update Inventory?"},
+        {"href": "guides/production-log.mp4", "text": "How to Log Production Data?"},
+        {"href": "guides/supplier-order.mp4", "text": "Supplier Order Troubleshooting"},
+        {"href": "guides/inventory-cells.mp4", "text": "Inventory Cell Management"},
+        {"href": "guides/mobile-transfer-1.mp4", "text": "Mobile Inventory Transfer"},
+        {"href": "guides/mobile-transfer-2.mp4", "text": "Mobile Cell Transfer"},
+        {"href": "guides/customer-matching.mp4", "text": "Customer-Item Matching"},
+        {"href": "guides/email-setup.mp4", "text": "Email Configuration"},
+        {"href": "docs/shipping-issues.pdf", "text": "Shipping Document Visibility Issues"},
+        {"href": "docs/currency-errors.pdf", "text": "Currency Selection Problems"},
+        {"href": "docs/support-system.pdf", "text": "How to Use IT Support System?"},
+        {"href": "docs/maintenance-system.pdf", "text": "How to Use Maintenance System?"},
+        {"href": "docs/invoicing-errors.pdf", "text": "Electronic Invoice Error Handling"}
+      ]
+    },
+    "myModalBk": {
+      "title": "Maintenance Guide",
+      "items": [
+        {"href": "maintenance/equipment-adjustment.mp4", "text": "Equipment Flow Adjustment", "date": "15.06.2024"}
+      ]
+    },
+    "myModalKVKK": {
+      "title": "Compliance Training",
+      "items": [
+        {"href": "training/compliance-awareness.mp4", "text": "Awareness"},
+        {"href": "training/compliance-rights.mp4", "text": "Rights"},
+        {"href": "training/compliance-measures.mp4", "text": "Administrative Measures"},
+        {"href": "training/compliance-principles.mp4", "text": "Principles"},
+        {"href": "training/compliance-security.mp4", "text": "Cybersecurity Basics"},
+        {"href": "training/compliance-definitions.mp4", "text": "Definitions"},
+        {"href": "training/compliance-technical.mp4", "text": "Technical Aspects"}
+      ]
+    },
+    "myModalEkran": {
+      "title": "Production Dashboards",
+      "items": [
+        {"href": "https://dash.example.com/line-1-a", "text": "(1) Production Line A"},
+        {"href": "https://dash.example.com/line-2-a", "text": "(2) Production Line B"},
+        {"href": "https://dash.example.com/line-3-a", "text": "(3) Production Line C"},
+        {"href": "https://dash.example.com/line-1-b", "text": "(1) Production Metrics A"},
+        {"href": "https://dash.example.com/line-2-b", "text": "(2) Production Metrics B"},
+        {"href": "https://dash.example.com/line-3-b", "text": "(3) Production Metrics C"},
+        {"href": "https://dash.example.com/temp-graph", "text": "(1) Temperature Data Graph"}
+      ]
+    },
+    "myModal1": {
+      "title": "Web Shortcuts",
+      "description": "Quick access links requested by users.",
+      "items": [
+        {"href": "https://government.example.com", "text": "Government Services"},
+        {"href": "https://finance.example.com", "text": "Financial Tools"},
+        {"href": "https://trade.example.com/", "text": "Trade Portal"},
+        {"href": "https://pdfconvert.example.com/", "text": "PDF Converter"},
+        {"href": "https://pdfcompress.example.com/", "text": "PDF Compressor"}
+      ]
+    }
+  }
+}

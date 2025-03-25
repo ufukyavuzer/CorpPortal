@@ -1,0 +1,192 @@
+/**
+ * CorpPortal - Custom Styles
+ * 
+ * Description: Custom CSS styles for enhancing the appearance of the CorpPortal,
+ * primarily focusing on the Google search bar styling.
+ * Author: Ufuk Yavuzer
+ * Created: March 24, 2025
+ * Version: 1.0
+ */
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.875rem;
+    background-color: #f1f3f6;
+    color: #354851;
+}
+
+a {
+    color: #354851;
+    text-decoration: none !important;
+}
+
+.eee-logo-block {
+    position: relative;
+}
+
+.eee-logo {
+   /* margin-top: 20px;
+    margin-bottom: 20px;*/
+	margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 6px;
+    /*background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,.040);*/
+}
+
+.eee-item {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+
+.eee-item > div {
+    margin-top: 30px;
+    text-align: center !important;
+}
+
+.eee-item > div > a > div {
+    background-color: #fff;
+    border-radius: .25rem;
+    padding: 1rem;
+    height: 178px;
+    overflow: hidden;
+    box-shadow: 0 1px 10px rgba(0,0,0,.040);
+}
+
+.eee-item > div > a > div i {
+    color: #adbec5;
+}
+
+.eee-item > div > a > div p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+/* Grid */
+
+@media (min-width:992px) {
+    .col-lg-3 {
+        width: 14.24%;
+    }
+}
+
+@media (min-width:1200px) {
+    .col-xl-2 {
+        width: 14.11%;
+    }
+}
+@media (min-width:1900px) {
+    .col-xl-2 {
+        width: 14.11%;
+    }
+}
+
+/* Table */
+
+.table td, .table th {
+    border-top: 1px solid rgba(0,0,0,0);
+}
+
+.thead-inverse th {
+    color: #fff;
+    background-color: #adbec5;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #fbfbfb;
+}
+
+/* Modal */
+
+.modal-header {
+    color: #adbec5;
+}
+.modal-body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Hover */
+
+.eee-item > div > a:hover > div {
+    background-color: #314551;
+    transition: all .218s ease-out 0s;
+}
+
+.eee-item > div > a:hover > div p {
+    color: #fff;
+    transition: all .218s ease-out 0s;
+}
+
+/* Weather */
+
+.eee-weather {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.eee-weather .weather {
+    margin-bottom: 0;
+}
+
+.eee-weather .weather li {
+    display: table-cell;
+}
+
+.eee-weather .weather li .description {
+    font-size: 12px;
+}
+
+.eee-weather .weather li.eee-last-li div {
+    margin-left: 10px;
+}
+
+.eee-weather .weather li.eee-last-li div:last-child {
+    color: #15aadc;
+}
+
+.weather .icon img {
+    width: 48px;
+    height: 48px;
+}
+
+/* Google */
+
+.eee-google {
+    margin-top: 20px;
+}
+
+.eee-google table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.eee-google table .d-inline-block {
+    background-color: #fff;
+    border-radius: .25rem;
+    padding: 0.55rem;
+    box-shadow: 0 1px 10px rgba(0,0,0,.040);
+}
+
+.eee-google table .d-inline-block img {
+    max-height: 38px;
+    margin-right: 15px;
+}
+
+.eee-google table .d-inline-block .form-control {
+    border-radius: .1rem;
+}
+
+.eee-google table .d-inline-block .btn {
+    border-radius: .1rem;
+    margin-left: -4px;
+}
+
+.eee-google table .d-inline-block .btn .fa-search {
+    vertical-align: top;
+    padding-top: 2px;
+}
