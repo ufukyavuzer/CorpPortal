@@ -9,11 +9,10 @@
  * Dependencies: jQuery, Bootstrap
  */
 $(document).ready(function() {
-    $.getJSON('indexBack.json', function(data) {
-        // Set page title
+    // Append a timestamp to prevent caching
+    $.getJSON('indexBack.json?t=' + Date.now(), function(data) {
         $('#pageTitle').text(data.header.title);
 
-        // Generate header
         const headerContainer = $('#headerContainer');
         headerContainer.html(`
             <a href="${data.header.href}">
@@ -21,7 +20,6 @@ $(document).ready(function() {
             </a>
         `);
 
-        // Generate main links
         const mainLinksContainer = $('#mainLinksContainer');
         data.mainLinks.forEach(link => {
             const timestamp = link.timestamp ? `?t=${Date.now()}` : '';
@@ -45,7 +43,6 @@ $(document).ready(function() {
             mainLinksContainer.append(linkHtml);
         });
 
-        // Generate modals
         const modalContainer = $('#modalTemplates');
         Object.keys(data.modals).forEach(modalId => {
             const modal = data.modals[modalId];
